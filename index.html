@@ -5,58 +5,68 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
    <link rel="stylesheet" href="css/style.css">
    <link href="https://fonts.googleapis.com/css2?family=Wallpoet&display=swap" rel="stylesheet">
-    <title>Hive</title>
+   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+   <link rel="stylesheet" href="https://ajax.googleapis.com/ajax/libs/jqueryui/1.12.1/themes/smoothness/jquery-ui.css">
+<script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.js"></script> 
+   <title>Hive</title>
 </head>
 <body>
     <h1>HIVE </h1>
     
     <ul id="grid" class="clear">
         <li>
-            <div class="hexagon"></div>
+            <div class="hexagon" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
         </li>
         <li>
-            <div class="hexagon"></div>
+            <div class="hexagon" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
         </li>
         <li>
-            <div class="hexagon"></div>
+            <div class="hexagon" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
         </li>
         <li>
-            <div class="hexagon"></div>
+            <div class="hexagon" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
         </li>
         <li>
-            <div class="hexagon"></div>
+            <div class="hexagon" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
         </li>
         <li>
-            <div class="hexagon"></div>
+            <div class="hexagon" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
         </li>
         <li>
-            <div class="hexagon"></div>
+            <div class="hexagon" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
         </li>
         <li>
-            <div class="hexagon"></div>
+            <div class="hexagon" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
         </li>
         <li>
-            <div class="hexagon"></div>
+            <div class="hexagon" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
         </li>
         <li>
-            <div class="hexagon"></div>
+            <div class="hexagon" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
         </li>
         <li>
-            <div class="hexagon"></div>
+            <div class="hexagon" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
         </li>
         <li>
-            <div class="hexagon"></div>
+            <div class="hexagon" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
         </li>
     </ul>
     <h2>Player Pieces</h2>
-    <img src="images/qbee-piece.png">
-    <img src="images/ant-piece.png">
-    <img src="images/ant-piece.png">
-    <img src="images/ghopper-piece.png">
-    <img src="images/ghopper-piece.png">
-    <img src="images/beetle-piece.png">
-    <img src="images/beetle-piece.png">
-
+    <div class="pieces" id="gamepieces" ondrop="drop(event)" ondragover="allowDrop(event)">
+    <img class="bugs" draggable="true" ondragstart="drag(event)" id= "item one" src="images/qbee-piece.png">
+    <img class="bugs" draggable="true" ondragstart="drag(event)" id= "item two" src="images/ant-piece.png">
+    <img class="bugs"draggable="true" ondragstart="drag(event)" id= "item three" src="images/ant-piece.png">
+    <img class="bugs"draggable="true" ondragstart="drag(event)" id= "item four" src="images/ghopper-piece.png">
+    <img class="bugs" draggable="true" ondragstart="drag(event)" id= "item five" src="images/ghopper-piece.png">
+    <img class="bugs" draggable="true" ondragstart="drag(event)" id= "item six" src="images/beetle-piece.png">
+    <img class="bugs" draggable="true" ondragstart="drag(event)" id= "item seven" src="images/beetle-piece.png">
+</div>
+</div>
+<button id="button" type="button">Reset Game</button>
 </body>
 </html>
-<script></script>
+<script src="js/script.js"></script>
+<script>
+    $(".hexagon").droppable;
+    $(".gamepieces").draggable; 
+</script>

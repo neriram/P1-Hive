@@ -32,7 +32,7 @@ Grasshopper: can jump over any number of pieces to any unoccupied space in a str
 - [ ] Instructions for playing the game 
 - [ ] The game space is rendered as a hive 
 - [ ] Game pieces rendered
-- [ ] "Zen" game state where one player can manipulate pieces onto hive
+- [ ] "Zen" game state where one player can drag pieces onto hive
 - [ ] The game pieces can be dragged and dropped on gamespace
     - [ ] Add a click event to tile piece where on click, the location of the tile becomes the user's mouse location
     - [ ] If tile is currently being "dragged" by user and there is a click event, "drop" the piece in the matching game board section that the user is trying to drop the piece on

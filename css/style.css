@@ -76,3 +76,36 @@ h2{
 #grid li:nth-child(6n+4) { 
     margin-left: 0.5%;
 }
+#container {
+    width: 100%;
+      height: 400px;
+      background-color: #dedad1;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      overflow: hidden;
+      border-radius: 7px;
+      touch-action: none;
+}
+.item {
+    touch-action: none;
+    user-select: none;
+    position: relative;
+    cursor: pointer;
+}
+#gamepieces {
+    width: 100%;
+    height: auto;   
+}
+#button {
+    border-radius: 12px;
+    background-color: #5c5a57;
+    font-size: 20px;
+    color: white;
+    padding: 15px;
+    font-family: 'Wallpoet', cursive;
+}
+#button:hover{
+    color: #fdbf00;
+    
+}
