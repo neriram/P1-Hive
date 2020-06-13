@@ -9,7 +9,11 @@ h1 {
     font-size: 50px;
 }
 h2{
-    color:#5c5a57;
+    color:black; 
+    font-family: 'Wallpoet', cursive;
+}
+.red {
+    color: red;
     font-family: 'Wallpoet', cursive;
 }
 
@@ -43,7 +47,7 @@ h2{
     visibility: hidden;
 }
 
-#grid li .hexagon {
+.hexagon {
     position: absolute;
     top: 0;
     left: 0;
@@ -56,6 +60,10 @@ h2{
     -ms-transform: skewY(-30deg) rotate(60deg);
     transform: skewY(-30deg) rotate(60deg);
     overflow: hidden;
+}
+.hexagon img {
+    width: 100%;
+    height: auto;
 }
 #grid li * {
     visibility: visible;
@@ -95,7 +103,8 @@ h2{
 }
 #gamepieces {
     width: 100%;
-    height: auto;   
+    height: auto;
+    
 }
 #button {
     border-radius: 12px;
@@ -103,6 +112,7 @@ h2{
     font-size: 20px;
     color: white;
     padding: 15px;
+    margin-top: 20px;
     font-family: 'Wallpoet', cursive;
 }
 #button:hover{

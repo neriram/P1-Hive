@@ -14,15 +14,13 @@ function drag(event) {
     event.dataTransfer.setData('text', event.target.id);
 }
 function drop(ev) {
+    console.log(ev.target);
     ev.preventDefault();
-     if (ev.target.children.length > 0){
-        //do nothing
-     } else {
-        //allow bug piece
-    var data = ev.dataTransfer.getData('text');
-    ev.target.appendChild(document.getElementById(data))
-    console.log(ev.target.children)
-    }
+     if (ev.target.classList.contains('hexagon')){
+        var data = ev.dataTransfer.getData('text');
+        ev.target.appendChild(document.getElementById(data))
+        console.log(ev.target.children)
+     }
 }
 
 //Drag Functions
