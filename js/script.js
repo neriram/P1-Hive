@@ -25,20 +25,21 @@ function drop(ev) {
 
 //Drag Functions
 function dragStart() {
-    console.log('start')
 }
 
 function dragEnd() {
-    console.log('end');
 }
 //Reset game button to clear gameboard
  document.getElementById('button').addEventListener('click', resetGame);
  function resetGame() {
-     var bugs = document.querySelectorAll('.bugs');
-     bugs.forEach(bug => {
+     var player1Bugs = document.querySelectorAll('.player1');
+     player1Bugs.forEach(bug => {
         document.querySelector('#gamepieces').appendChild(bug);
      });
-     
+     var player2Bugs = document.querySelectorAll('.player2');
+     player2Bugs.forEach(bug => {
+        document.querySelector('#redGamepieces').appendChild(bug);
+     });
  }
 
 //function to detect bug 
