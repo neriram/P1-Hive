@@ -49,7 +49,7 @@ Grasshopper: can jump over any number of pieces to any unoccupied space in a str
 
 ## Technologies
 * HTML/CSS/JavaScript
-* Bootstrap for styling
+
 
 #### Sources
 https://www.codesmite.com/article/how-to-create-pure-css-hexagonal-grids

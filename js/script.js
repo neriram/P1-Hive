@@ -1,5 +1,3 @@
-console.log ('this is my game')
-
 
 //Global Variables
 var draggables = document.getElementById('gamepieces');
@@ -19,7 +17,7 @@ function drop(ev) {
      if (ev.target.classList.contains('hexagon')){
         var data = ev.dataTransfer.getData('text');
         ev.target.appendChild(document.getElementById(data))
-        console.log(ev.target.children)
+        //console.log(ev.target.children)
      }
 }
 
@@ -29,7 +27,7 @@ function dragStart() {
 
 function dragEnd() {
 }
-//Reset game button to clear gameboard
+//Reset game button to clear gameboard and return pieces to their div
  document.getElementById('button').addEventListener('click', resetGame);
  function resetGame() {
      var player1Bugs = document.querySelectorAll('.player1');
@@ -42,6 +40,14 @@ function dragEnd() {
      });
  }
 
-//function to detect bug 
-// if bug is in div then dont allow move if it is true then allow move
+ //function to detect placement of bee piece
+v
+//function to detect loser
 
+//player 1 bee surrounded 
+// const bee1 = document.getElementById('item one')
+// //player 2 bee surrounded
+// const bee2 = document.getElementById('item two one')
+
+// if (bee1 = )
+// //
