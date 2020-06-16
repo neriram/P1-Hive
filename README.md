@@ -10,16 +10,16 @@ The game begins when the a player places a piece on the gamespace (the hive). Th
 
 ### Rules
 
-* When a player places a creature onto the hive, it must be placed touching one of their own pieces.
+* When a player places a bug onto the hive it must be placed touching another piece.
 * The hive must NEVER be broken
 
 The creatures move in specific ways:
 
 Queen bee: can move in any direction, one space at a time
 
-Beetle: moves one space per turn but can also move on top other pieces
+Beetle: moves one space per turn
 
-Ant: can move any number of spaces along the perimeter of the hive
+Ant: can move any number of spaces along the perimeter of the pieces placed the hive
 
 Grasshopper: can jump over any number of pieces to any unoccupied space in a straight line
 
@@ -37,6 +37,7 @@ Grasshopper: can jump over any number of pieces to any unoccupied space in a str
     - [ ] Add a click event to tile piece where on click, the location of the tile becomes the user's mouse location
     - [ ] If tile is currently being "dragged" by user and there is a click event, "drop" the piece in the matching game board section that the user is trying to drop the piece on
     - [ ] Change the position/xy values of the piece image to now match the gameboard position to achieve this effect
+- [ ] Reset button returns game pieces to their original spot
 
  
 ## Stretch Goals
@@ -45,12 +46,12 @@ Grasshopper: can jump over any number of pieces to any unoccupied space in a str
 - [ ] Game logic function that checks if piece is allowed to be moved in that way or not
 - [ ] Illegal moves are detected and denied
 - [ ] Sound effect when the queen bee is surrounded
-- [ ] Game end state detects when a queen bee is fully surrounded
+- [ ] Game end state detects when a queen bee is fully surrounded and winner is declared
 
 ## Technologies
 * HTML/CSS/JavaScript
 
 
-#### Sources
+#### References
 https://www.codesmite.com/article/how-to-create-pure-css-hexagonal-grids
 https://csshexagon.com/
